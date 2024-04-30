@@ -39,7 +39,7 @@ class StoreProjectRequest extends FormRequest
 
             'description.max' => "Il testo non puù superare i :max caratteri",
 
-            'cover_image.mime' => "Il file deve essere in formato .jpg",
+            'cover_image.mimes' => "Il file deve essere in formato .jpg",
             'cover_image.max' => "Il file non deve superare :max KB",
         ];
     }
