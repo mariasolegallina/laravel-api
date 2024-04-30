@@ -82,7 +82,7 @@ class ProjectController extends Controller
      */
     public function update(UpdateProjectRequest $request, Project $project)
     {
-        // dd($request);
+
         $request->validated();
 
         $project->update($request->all());
