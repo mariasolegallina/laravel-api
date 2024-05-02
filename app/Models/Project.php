@@ -14,6 +14,11 @@ class Project extends Model
 
     protected $fillable = ['title', 'description', 'type_id'];
 
+    public function getCoverImageAttribute($value)
+    {
+        return $value ? asset("storage/" . $value) : null;
+    }
+
     public function type()
     {
         return $this->belongsTo(Type::class);
